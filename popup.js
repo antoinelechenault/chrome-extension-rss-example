@@ -24,9 +24,11 @@ class InitPopup
                     publicationDate.textContent = item.querySelector('pubDate').textContent;
 
                     var link = document.createElement('a');
-                    link.href = item.querySelector('link').textContent;
                     link.appendChild(h1);
                     link.appendChild(publicationDate);
+                    link.onclick = function () {
+                        chrome.tabs.create({ active: true, url: item.querySelector('link').textContent });
+                    };
 
                     document.getElementById('render-div').appendChild(link);
 
@@ -39,4 +41,3 @@ class InitPopup
 // Au click sur la popup
 chrome.browserAction.setBadgeText({ text: '' });
 new InitPopup().populatePopup();
-
