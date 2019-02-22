@@ -2,8 +2,7 @@ class InitPopup
 {
     constructor()
     {
-        this.CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
-        this.RssUrl = this.CORS_PROXY + "https://medium.com/feed/the-story";
+        this.RssUrl = "https://medium.com/feed/the-story";
     }
 
     populatePopup()

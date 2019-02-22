@@ -9,8 +9,7 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 });
 
 
-var CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
-var RssUrl = CORS_PROXY + "https://medium.com/feed/the-story";
+var RssUrl = "https://medium.com/feed/the-story";
 
 
 function checkIfNewContent()

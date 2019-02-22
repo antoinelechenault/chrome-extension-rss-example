@@ -19,6 +19,6 @@
         "128": "img/logo.png"
     },
     "permissions": [
-        "storage","alarms"
+        "storage","alarms","https://medium.com/"
     ]
 }
